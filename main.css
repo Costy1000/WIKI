@@ -1,0 +1,582 @@
+ /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==================================MY CSS=============================*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  
+
+}
+
+
+body{
+  background-color: #f6f6f6;
+  font-family: "Arial", Linux Libertine;
+  background-repeat: no-repeat;
+  
+
+ 
+}
+
+
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+.top{  
+  width: 85%;
+  height: auto;
+  float: right;
+  position: relative;
+  background-image: linear-gradient(#ffffff 50%,#f6f6f6 100%); 
+  
+}
+.top-right{
+  width: 100%;
+  height: auto;
+  
+  display: block;
+
+
+}
+.wrapper{
+  float: right;
+}
+.top-right p{
+
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  font-size: 0.8rem;
+  margin-left: 0.9rem;
+
+}
+
+.nli{
+   color: #8c8c8c;
+
+}
+.top-bottom{
+  width: 100%;
+  float: left;
+  margin-top: 1.5rem;
+    
+  
+
+}
+
+.top-bottom button{
+  font-size: 1rem;
+  border: none;  
+  cursor: pointer;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;  
+  padding-left: 5px;
+  padding-right: 5px;
+  
+}
+.bottom-left{
+  height: auto;
+  float: left;
+    
+
+}
+.transparent{
+     height: 45px;
+     background-color: transparent;
+     display: inline-block;
+         
+}
+.talk  {
+  margin-bottom: 3px;  
+  border-bottom: none;  
+  display: inline-block;
+    
+}
+.article, .read{                 
+     height: 45px;                
+     background-color: white;     
+     display: inline-block;       
+     text-align: center;       
+}                                 
+
+.bottom-right{  
+  height: auto;
+  float: right;
+
+}
+.wrapper2{
+      
+     display: inline-block;
+    border: 1px solid #8c8c8c;
+    border-radius: 5%;
+    margin-right: 0.6rem;
+    
+}
+
+.wrapper2 input{
+    width: 13rem;
+    border: none;
+    outline: none;
+    
+}
+.wrapper2 button{
+      background-color: transparent;
+      background-repeat: no-repeat;
+      border: none;
+      outline: none;
+       overflow: hidden;
+}
+
+
+/*===================================================Left=============================*/
+
+.left{
+    
+  width: 15%;
+  float: left;
+  background-image: linear-gradient(to bottom, #ffffff 5%,#f6f6f6 15%);
+  height: auto;
+  
+  
+  
+}
+   
+  
+
+
+
+
+.list1, .list2, .list3, .list4 {
+ width: 100%;
+ 
+ height: auto;
+ margin-top: 1rem;
+ padding-left: 1rem;
+
+}
+
+
+.list1 img{
+  width: 70%;
+  height: auto;
+  margin-bottom: 1rem;
+  
+
+}
+.list1 p, .list2 p, .list3 p, .list4 p, .list5 p{
+   font-size: 0.9rem;
+   padding-top: 0.250rem;
+   padding-bottom: 0.250rem;
+   padding-left: 0.4rem;
+   padding-right: 0.4rem; 
+   
+}
+.line{
+  width: 8rem;
+  border: 0.5px solid rgb(204, 204, 204);
+  
+  margin-left: 0.37rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+@media (max-width: 1000px){
+    .line{
+        width: 6rem;
+        border: 0.5px solid rgb(204, 204, 204);
+        margin-left: 0.37rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    } 
+  
+}
+.list5{
+  width: 90%;
+ height: auto;
+ margin-top: 1rem;
+ padding-left: 1rem;
+ 
+}
+
+.setting, .pencil{
+    float: right;
+    
+ 
+}
+
+.pencil a{
+  font-size: 0.8rem;
+  
+  color: #b3b3b3;
+    
+}
+
+.pencil a:hover{
+ color: #0066ff;
+}
+
+
+
+
+
+/*================================================Center=========================*/
+.center{
+  width: 85%; 
+  height: auto;
+  background-color: white;
+  float: right;
+  border-top: 1px solid #9ecaed;
+   outline: none;
+  padding-left: 2rem;
+  padding-right: 2rem; 
+  border-bottom: 1px solid #9ecaed;
+  border-left: 1px solid #9ecaed;   
+  
+}
+.title{
+  width: auto;
+  height: auto;
+  margin-top: 2rem;
+}
+.title h1 {
+   font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    font-style: italic;
+}
+.line2{
+    max-width: 100%;
+    height: 0.0625rem;
+    background-color: #8c8c8c;
+    
+}
+.line3{
+    width: auto;
+    height: 0.0625rem;
+    background-color: #8c8c8c;
+    
+}
+.caption{
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    
+}
+.image{
+    width: 20rem;
+    float: right;
+    text-align: center;
+    border: 1px solid #8c8c8c;
+    background-color: #f6f6f6;
+    margin-left: 1rem;
+}
+.image h3{
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.image img{
+    width: 80%;
+    height: auto;
+}
+.image p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.list-left{
+    float: left;
+    
+}
+.list-left p{
+    font-size: 0.8rem;
+     padding-left: 0.5rem;
+     padding-top: 0.6rem;
+     padding-bottom: 0.6rem;
+     text-align: justify;
+}
+.list-right p{
+     font-size: 0.8rem;
+     text-align: justify;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 0.5rem;
+    
+}
+
+.list-right{
+    float: right;
+     
+}
+.cm{
+    width: auto;
+   height: auto;
+   margin-top: 2rem; 
+   display: block;
+    
+    
+}
+.cm p, .story p, .game-menu p, .eg p{
+   font-size: 0.9rem;
+    line-height: 1.6;
+}
+.cm strong{
+    font-weight: bold;
+    
+}
+.list{
+    width: 9rem;
+    height: auto;
+    border: 1px solid #8c8c8c;
+    background-color: #f6f6f6;
+    
+    
+}
+.content{
+    text-align: center;
+    
+}
+.list strong{
+    font-weight: bold;
+}
+.list p{
+  padding-left: 0.5rem;
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+.game{
+    margin-left: 0.6rem;
+}
+.story,  .eg,  .references,  .el{
+    width: auto;
+    height: auto;
+    margin-top: 2rem
+    
+    
+}
+.story h1, .game-menu h1, .eg h1, .references h1{
+   font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem; 
+}
+/*.story a, .game-menu a,  .references a*/ .edit {
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    font-style: normal;
+}
+.hr{
+     width: 70px;
+    height: 0.0625rem;
+    background-color: #8c8c8c;
+}
+.game-menu{
+   width: auto;
+    height: auto;
+    margin-top: 2rem;
+     
+}
+.game-image{
+    width: 10rem;
+    height: auto;
+    float: left;
+    border: 1px solid #8c8c8c; 
+    text-align: center;
+    margin-right: 1rem;
+    margin-top: 1rem;
+ 
+}
+.game-image img{
+   width: 90%;
+   height: auto;
+   margin-top: 0.450rem;
+}
+.game-image p{
+    text-align: justify;
+    font-size: 0.7rem;
+    line-height: 1.6;
+    padding-left: 0.320rem;
+    padding-right: 0.320rem;
+    padding-top: 0.320rem;
+    
+}
+.part2{
+    margin-top: 2rem;
+}
+
+ sup{
+   font-size: smaller;
+   vertical-align: super;
+   
+
+
+  }
+ .dot{
+    width: 0.3125rem;
+    height: 0.3125rem;
+    border-radius: 50%;
+    background-color:  #0000EE;
+    display: inline-block;
+  }
+
+.italic{
+    font-style: italic;
+}
+
+.atari{
+    font-style:  normal;
+}
+.references p{
+    font-size: 13px;
+    padding-right: 20px;
+}
+@media (max-width: 600px){
+   references p{
+    font-size: 13px;
+    margin-left: 50px;
+}
+}
+.el2{
+    margin-top: 1rem;
+    width: 100%;
+    height: 4rem;
+    border:  1px solid #8c8c8c; 
+    margin-bottom: 1.3rem;
+    background-color: #f6f6f6;
+    
+    
+}
+.el2 p{
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-bottom: 0.1rem;
+    margin-top: 0.3rem;
+}
+.vl{
+   display: inline;
+   margin-left: 0.1rem;
+   margin-right: 0.1rem;
+
+}
+
+
+
+
+ 
+
+/*=================================================footer===========================*/
+
+footer{
+  width: 85%;
+  height: auto;
+  float: right;
+  padding-left: 0.9rem;
+  padding-top: 1.3rem;
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  margin-right: 0.7rem;
+  
+  
+    
+
+}
+.last{
+    padding-bottom: 1rem;
+}
+.creative{
+    line-height: 1.6;
+    padding-bottom: 1rem;
+}
+
+.f1{
+    width: auto;
+    height: auto;
+    float: left;
+    
+}
+.f1 a{
+    padding-right: 0.4rem;
+    display: inline-block;
+}
+.f2{
+    width: auto;
+    height: auto;
+    float: right;
+    margin-bottom: 1rem;
+}
+.f2 a{
+    display: inline-block;
+    text-align: right;
+    
+   
+    
+}
+.right{
+    float: right;
+    margin-right: 2rem;
+}
+
+
+
+
