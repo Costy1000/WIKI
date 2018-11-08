@@ -4,12 +4,12 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, hr, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol, ul, li, 
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -56,527 +56,554 @@ table {
 
 }
 
-
 body{
-  background-color: #f6f6f6;
-  font-family: "Arial", Linux Libertine;
+  width: 100%;
+  background-image: linear-gradient( #ffffff ,  #e6e6e6 ) ;
+  background-size: cover;
   background-repeat: no-repeat;
-  
-
- 
+  font-family: 'Linux Libertinee', sans-serif;
+}
+ /*.bs{
+    background-image: linear-gradient( #ffffff 5%, #e6e6e6 90% ) ;
+} */
+            /*=============================================================links===========================================*/
+a{
+   text-decoration: none; 
+}
+a:hover{
+    text-decoration: underline; 
 }
 
-
-
-
-a:link {
-    text-decoration: none;
+          /*=====================================================================Header==============================================*/
+.right{
+     width: 90%;
+     height: auto;
+    float: right;
+    text-align: right;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.right p{
+    padding-top: 1rem;
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 13px;
+}
+.user{
+    color: #595959;
 }
 
-a:visited {
-    text-decoration: none;
+   /*=========================================================================left=================================================*/
+#flex{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
 }
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
-}
-.top{  
-  width: 85%;
-  height: auto;
-  float: right;
-  position: relative;
-  background-image: linear-gradient(#ffffff 50%,#f6f6f6 100%); 
-  
-}
-.top-right{
-  width: 100%;
-  height: auto;
-  
-  display: block;
-
-
-}
-.wrapper{
-  float: right;
-}
-.top-right p{
-
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 7px;
-  font-size: 0.8rem;
-  margin-left: 0.9rem;
-
-}
-
-.nli{
-   color: #8c8c8c;
-
-}
-.top-bottom{
-  width: 100%;
-  float: left;
-  margin-top: 1.5rem;
-    
-  
-
-}
-
-.top-bottom button{
-  font-size: 1rem;
-  border: none;  
-  cursor: pointer;
-  margin-left: 0.7rem;
-  margin-right: 0.7rem;  
-  padding-left: 5px;
-  padding-right: 5px;
-  
-}
-.bottom-left{
-  height: auto;
-  float: left;
-    
-
-}
-.transparent{
-     height: 45px;
-     background-color: transparent;
-     display: inline-block;
-         
-}
-.talk  {
-  margin-bottom: 3px;  
-  border-bottom: none;  
-  display: inline-block;
-    
-}
-.article, .read{                 
-     height: 45px;                
-     background-color: white;     
-     display: inline-block;       
-     text-align: center;       
-}                                 
-
-.bottom-right{  
-  height: auto;
-  float: right;
-
-}
-.wrapper2{
-      
-     display: inline-block;
-    border: 1px solid #8c8c8c;
-    border-radius: 5%;
-    margin-right: 0.6rem;
-    
-}
-
-.wrapper2 input{
-    width: 13rem;
-    border: none;
-    outline: none;
-    
-}
-.wrapper2 button{
-      background-color: transparent;
-      background-repeat: no-repeat;
-      border: none;
-      outline: none;
-       overflow: hidden;
-}
-
-
-/*===================================================Left=============================*/
-
 .left{
-    
-  width: 15%;
-  float: left;
-  background-image: linear-gradient(to bottom, #ffffff 5%,#f6f6f6 15%);
-  height: auto;
-  
-  
-  
-}
-   
-  
-
-
-
-
-.list1, .list2, .list3, .list4 {
- width: 100%;
- 
- height: auto;
- margin-top: 1rem;
- padding-left: 1rem;
-
-}
-
-
-.list1 img{
-  width: 70%;
-  height: auto;
-  margin-bottom: 1rem;
-  
-
-}
-.list1 p, .list2 p, .list3 p, .list4 p, .list5 p{
-   font-size: 0.9rem;
-   padding-top: 0.250rem;
-   padding-bottom: 0.250rem;
-   padding-left: 0.4rem;
-   padding-right: 0.4rem; 
-   
-}
-.line{
-  width: 8rem;
-  border: 0.5px solid rgb(204, 204, 204);
-  
-  margin-left: 0.37rem;
-  margin-top: 0.1rem;
-  margin-bottom: 0.2rem;
-}
-@media (max-width: 1000px){
-    .line{
-        width: 6rem;
-        border: 0.5px solid rgb(204, 204, 204);
-        margin-left: 0.37rem;
-        margin-top: 0.2rem;
-        margin-bottom: 0.2rem;
-    } 
-  
-}
-.list5{
-  width: 90%;
- height: auto;
- margin-top: 1rem;
- padding-left: 1rem;
- 
-}
-
-.setting, .pencil{
-    float: right;
-    
- 
-}
-
-.pencil a{
-  font-size: 0.8rem;
-  
-  color: #b3b3b3;
+    width: 10rem;
+    height: 100%;
+    float: left;
+    padding-left: 1rem;
+    /*flex-direction: row;
+    justify-content: flex-start; */
+    padding-right: 1.5rem;
+    font-size: 13px;
+    white-space: nowrap;
     
 }
-
-.pencil a:hover{
- color: #0066ff;
-}
-
-
-
-
-
-/*================================================Center=========================*/
-.center{
-  width: 85%; 
-  height: auto;
-  background-color: white;
-  float: right;
-  border-top: 1px solid #9ecaed;
-   outline: none;
-  padding-left: 2rem;
-  padding-right: 2rem; 
-  border-bottom: 1px solid #9ecaed;
-  border-left: 1px solid #9ecaed;   
-  
-}
-.title{
-  width: auto;
-  height: auto;
-  margin-top: 2rem;
-}
-.title h1 {
-   font-size: 1.5rem;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    font-style: italic;
-}
-.line2{
-    max-width: 100%;
-    height: 0.0625rem;
-    background-color: #8c8c8c;
-    
-}
-.line3{
-    width: auto;
-    height: 0.0625rem;
-    background-color: #8c8c8c;
-    
-}
-.caption{
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    
-}
-.image{
-    width: 20rem;
-    float: right;
-    text-align: center;
-    border: 1px solid #8c8c8c;
-    background-color: #f6f6f6;
-    margin-left: 1rem;
-}
-.image h3{
-    font-size: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+ .image{
+   width: auto;
+     height: auto;
+     margin-bottom: 1rem;
 }
 .image img{
-    width: 80%;
+    max-width: 7rem;
     height: auto;
 }
-.image p{
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+.list1, .list2, .list3, .list4{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.list1 p, .list2 p, .list3 p, .list4 p{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-family: 'Linux Libertinee', sans-serif;
+}
+.left hr{
+    border: 0.5px solid grey;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+.fa-cog, .edit {
+    float: right;
+    color: grey;
+    
+}
+.fa-cog:hover{
+    color: black;
+    transition: 0.5s ease-in;
+}
+              /*=================================================edit=================================================*/
+.edit i, .edit a{
+    color: grey;
+}
+.edit a:hover{
+    text-decoration: none;
+}
+.edit:hover a{
+   color: blue;
+}
+.edit:hover i{
+   color: blue;
+}
+.edit:hover{
+   border-bottom: 1px solid blue; 
+}
+      /*============================================================================center===================================*/
+
+.center{
+    width: 90rem;
+    height: auto;
+    float: right;
+    margin-top: 1.3rem;
+    border-left: 1px solid #a7d7f9;
+    border-bottom: 1px solid #a7d7f9;
+
+    
+    
+}
+.bs{
+    width: 100%;
+    height: 2rem;
+    padding-top: 0.2rem;
+    border-bottom: 1px solid #a7d7f9;
+    
+   
+    
+}
+ 
+.part1, .part2, .part3, .part4, .part5, .part6{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+
+}
+
+.part1-text1 h1{
+    font-size: 1.7rem;
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    padding-top: 1rem;
+}
+
+.center h6{
+    font-size: 0.8rem;
+    padding-bottom: 0.8rem;
+    
+}
+.part1-text2 p, .part2 p, .part3 p, .part4 p, .part6 p{
+    font-size: 0.8735rem;
+    line-height: 1.6;
+}
+sup{
+   font-size: 0.625rem;
+   vertical-align: super;
+
+  }
+
+
+strong{
+    font-weight: bold;
+}
+.edit2{
+    font-size: 0.9375rem;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+        /*===============================================================part1-tabel=================================================*/
+#part1-tabel{
+    width: 8rem;
+    height: auto;
+    font-size: 13px;
+    margin-top: 1.3rem;
+    padding-top: 0.2rem;
+    margin-bottom: 1.3rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border: 1px solid grey;
+    text-align: left;
+    background-color: #f8f9fa;
+}
+#show{
+   color: blue;  
+}
+#show:hover{
+    text-decoration: underline;
+
+}
+.part1-tabel h5{
+    text-align: center;
+}
+.gm{
+    text-align: right;
+}
+#part1-tabel p{
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    
+}
+.center h3{
+    font-size: 20px;
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+}
+         /*=================================================================part-image===============================================*/
+.part-image{
+    width: 18rem;
+    float: right;
+    height: auto;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 13px;
+    background-color: #f8f9fa;
+    
+
+}
+
+
+
+.bold{
+    font-weight: bold;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-size: 15px;
+}
+.list-left p, .list-right p{
+   padding-top: 0.3rem;
+   padding-bottom: 0.3rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+     
 }
 .list-left{
     float: left;
-    
+    text-align: justify;
+    font-weight: bold;
 }
-.list-left p{
-    font-size: 0.8rem;
-     padding-left: 0.5rem;
-     padding-top: 0.6rem;
-     padding-bottom: 0.6rem;
-     text-align: justify;
-}
-.list-right p{
-     font-size: 0.8rem;
-     text-align: justify;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-    padding-right: 0.5rem;
-    
-}
-
 .list-right{
     float: right;
-     
+    text-align: justify;
 }
-.cm{
-    width: auto;
-   height: auto;
-   margin-top: 2rem; 
-   display: block;
-    
-    
+/*@media(min-width: 800px ){
+    .part-image{
+    float: right;
+    }
 }
-.cm p, .story p, .game-menu p, .eg p{
-   font-size: 0.9rem;
-    line-height: 1.6;
+@media(max-width: 800px){
+    .center{
+        width 90%;
+    }
+    .left{
+        width: 10%;
+    }
+    .part-image{
+        width: 13rem;
+        height: 19.5rem;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        font-size: 10px;
+        margin-bottom: 0.3rem;
+    }
+    .bold{
+  font-size: 10px;  
 }
-.cm strong{
-    font-weight: bold;
-    
+.part-image img{
+    width: 7rem;
 }
-.list{
-    width: 9rem;
-    height: auto;
-    border: 1px solid #8c8c8c;
-    background-color: #f6f6f6;
-    
-    
-}
-.content{
-    text-align: center;
-    
-}
-.list strong{
-    font-weight: bold;
-}
-.list p{
-  padding-left: 0.5rem;
-    font-size: 0.9rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-}
-.game{
-    margin-left: 0.6rem;
-}
-.story,  .eg,  .references,  .el{
+ } +/
+   /*================================================================================part3============================================*/
+.part3{
     width: auto;
     height: auto;
-    margin-top: 2rem
-    
-    
+   
 }
-.story h1, .game-menu h1, .eg h1, .references h1{
-   font-size: 1.2rem;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem; 
+.part1{
+    clear: right;
 }
-/*.story a, .game-menu a,  .references a*/ .edit {
-    font-size: 0.9rem;
-    padding-left: 1rem;
-    font-style: normal;
-}
-.hr{
-     width: 70px;
-    height: 0.0625rem;
-    background-color: #8c8c8c;
-}
-.game-menu{
-   width: auto;
-    height: auto;
-    margin-top: 2rem;
-     
-}
-.game-image{
-    width: 10rem;
+
+.part3-image{
+    width: 10.5rem;
     height: auto;
     float: left;
-    border: 1px solid #8c8c8c; 
-    text-align: center;
+    border: 1px solid grey;
     margin-right: 1rem;
-    margin-top: 1rem;
- 
-}
-.game-image img{
-   width: 90%;
-   height: auto;
-   margin-top: 0.450rem;
-}
-.game-image p{
-    text-align: justify;
-    font-size: 0.7rem;
-    line-height: 1.6;
-    padding-left: 0.320rem;
-    padding-right: 0.320rem;
-    padding-top: 0.320rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: #f8f9fa;
     
 }
-.part2{
-    margin-top: 2rem;
+.part3-image img{
+    width: 10rem;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 0.2rem;
 }
+.part3-image p{
+    font-size: 12px;
+    line-height: 1.6;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+.part3-text1{
+    width: 100%;
+    height: auto;   
+}
+.part3 h4{
+    font-size: 17px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}  
 
- sup{
-   font-size: smaller;
-   vertical-align: super;
-   
 
+          /*============================================================part5====================================================*/
+.part5 p{
+    font-size: 0.875rem;
 
-  }
- .dot{
-    width: 0.3125rem;
-    height: 0.3125rem;
+} 
+
+.references p {
+  font-size: 0.875rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  line-height: 1.6;
+}
+.references sup{
+    font-size: 0.625rem;
+}
+.references i{
+    font-size: 0.625rem;
+}
+      /*=======================================================================part6===================================================*/
+.dot{
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background-color:  #0000EE;
-    display: inline-block;
-  }
+     display: inline-block;
+    margin-right: 0.5rem;
+}
+.part6 i{
+    font-size: 0.625rem;
+}
+.part6-text1 {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    white-space: nowrap;
+}
 
+
+.part6-text2{
+  border: 1px solid grey;
+  width: 100%;
+  padding-left: 0.3rem;
+  background-color: #f8f9fa;
+  margin-bottom: 0.5rem;
+}
+.part6-text2 p{
+    display: inline-block;
+    padding-right: 0.1rem;
+    padding-top: 0.2rem;
+    font-size: 0.875rem;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+}
+.line{
+    display: inline;
+    border-left: 1px solid grey;
+    height: 20px;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    
+    
+}
 .italic{
     font-style: italic;
 }
 
-.atari{
-    font-style:  normal;
+/*====================================================================Buttons===================================*/
+
+.bs{
+  background-image:   linear-gradient(#ffffff, #f2f2f2); 
 }
-.references p{
+/*.bt-left button{
+    padding: 9px;
+    height: 27px;
+    border-left: 1px solid hsla(205, 87%, 82%, 0.5);
+    border-right: 1px solid hsla(205, 87%, 82%, 0.5);
+}  */
+
+.bt-right a, .bt-left a{
+    border-left: 1px solid hsla(205, 87%, 82%, 0.5);
+    border-right: 1px solid hsla(205, 87%, 82%, 0.5);
+     background-color: hsla(150, 73%, 96%, 0.4);
     font-size: 13px;
-    padding-right: 20px;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding-top: 0.4rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    
 }
-@media (max-width: 600px){
-   references p{
+.bt-left{
+    float: left;
+    margin-top: 0.6rem;
+   
+}
+/*.bt-left button{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
     font-size: 13px;
-    margin-left: 50px;
+    border-top: none;
+    border-bottom: none;
+    background-color: white;
+    background-color: hsla(150, 73%, 96%, 0.4);
+    font-family: 'Linux Libertinee', sans-serif;
+} */
+.bt-right{
+    float: right;
+    margin-top: 0.6rem;
+   
 }
+#article{
+    margin-left: 0;
+    background-color: white;
+    color: black;
+    border-left: none;
+    text-decoration: none;
 }
-.el2{
-    margin-top: 1rem;
-    width: 100%;
-    height: 4rem;
-    border:  1px solid #8c8c8c; 
-    margin-bottom: 1.3rem;
-    background-color: #f6f6f6;
-    
-    
+.bt-left a:hover, .bt-right a:hover{
+    background-color: white;
+    text-decoration: underline;
 }
-.el2 p{
+
+        /*================================================================search-bar===========================================*/
+.search-container {
     display: inline-block;
-    padding-left: 0.5rem;
-    padding-bottom: 0.1rem;
-    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    position: relative;
+    border: 1px groove #d9d9d9;
+    float: right;
+    font-family: 'Linux Libertinee', sans-serif;
+ 
 }
-.vl{
-   display: inline;
-   margin-left: 0.1rem;
-   margin-right: 0.1rem;
-
+.search-container button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background: transparent;
+    padding-right: 0.3rem;
+    border: none;
 }
-
-
-
-
+.search-container button:hover{
+   cursor: pointer; 
+}
+.search-container input{
+    width: 20rem;
+    height: 1.25rem;
+    border: none;
+}
+.search-container input:focus{
+    outline: none;
+}
+.search-container:hover {
+    border: 1px groove #1a1a1a;
+   
+}
  
 
-/*=================================================footer===========================*/
+/*.search-container input:hover{
+    border: 1px solid red;
+} */
 
-footer{
-  width: 85%;
-  height: auto;
-  float: right;
-  padding-left: 0.9rem;
-  padding-top: 1.3rem;
-  margin-bottom: 1rem;
-  font-size: 0.7rem;
-  margin-right: 0.7rem;
-  
-  
-    
-
+.white{
+    background-color: white;
+    clear: both;
 }
-.last{
-    padding-bottom: 1rem;
-}
-.creative{
-    line-height: 1.6;
-    padding-bottom: 1rem;
-}
-
-.f1{
-    width: auto;
-    height: auto;
+.aa{
+    width: 12%;
     float: left;
-    
 }
-.f1 a{
-    padding-right: 0.4rem;
-    display: inline-block;
+#flex2{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
 }
-.f2{
-    width: auto;
+footer{
+    width: 100%;
     height: auto;
     float: right;
-    margin-bottom: 1rem;
-}
-.f2 a{
-    display: inline-block;
-    text-align: right;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 12px;
+    margin-left: 1rem;
+    padding-left: 10rem;
     
-   
     
 }
-.right{
+.footer-text{
+    width: 100%;
+    padding-top: 0.7rem;
+    
+}
+.UTC{
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    
+}
+.foundation{
+    padding-bottom: 0.6rem;
+    line-height: 1.6;
+}
+
+.footer-text2{
+  float: left;
+  text-align: center;
+  padding-bottom: 0.4rem;
+}
+.footer-text2 a{
+  padding-right: 0.2rem;
+}
+.logo{
     float: right;
-    margin-right: 2rem;
+    padding-bottom: 0.4rem;
+    
 }
-
-
-
+.hr{
+    height: 1px;
+    background-color: grey;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.hr-left{
+    height: 1px;
+    background-color: grey;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    
+}
 
