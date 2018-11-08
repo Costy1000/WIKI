@@ -508,6 +508,9 @@ strong{
     font-family: 'Linux Libertinee', sans-serif;
  
 }
+.search-container a{
+    color: black;
+}
 .search-container button{
     position: absolute;
     right: 0;
